@@ -28,12 +28,12 @@ print(result5)#we expect 123+456=579
 #lets build a list of test cases and expected results
 num1=["123", "999", "1000"]
 num2=["456", "111", "2000"]
-expectedResult=[579, 1110, 3000]
+expectedResult=["579", "1110", "3000"]
 
 #write a loop to try all the test cases
 for i in range(0,3):
     result=mySolution.addStrings(num1[i], num2[i])
-    if int(result)==expectedResult[i]:
+    if result==expectedResult[i]:
         print("test passed")
     else:
         print("test FAILED. Change Professions")
